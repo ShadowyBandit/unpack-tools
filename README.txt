@@ -1,3 +1,5 @@
+DESCRIPTION:
+	Repairs the broken files related to the ship models extracted by ContentSDK. How to extract: https://forum.worldofwarships.com/topic/174245-modapi-contentsdk/
 CONTENTS: 
 	gatherMP.py
 		INFO: This compiles a list of all the active MP tags in the patch into notObsolete.txt. 
