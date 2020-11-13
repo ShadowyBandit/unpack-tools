@@ -45,7 +45,7 @@ def main(fileDir):
       print(fileObj)
       root = tree.getroot()
       for child in root:
-        if "_lod" in child.text and "lods" not in child.text:
+        if child.text and "_lod" in child.text and "lods" not in child.text:
           print(child.text)
           child.text=os.path.join("%s/lods/" %os.path.split(child.text)[0],os.path.split(child.text)[1])
       tree.write(fileObj)
