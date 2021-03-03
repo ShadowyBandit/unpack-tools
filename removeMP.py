@@ -34,7 +34,7 @@ def main(fileDir):
     if file_extension(fileObj) == '.visual':
       print(fileObj)
       tree = ET.parse(fileObj)
-      tree.write("%s2" % fileObj)
+      #tree.write("%s2" % fileObj)
       root = tree.getroot()
       removeMP(root)
       tree.write(fileObj)
