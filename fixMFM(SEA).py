@@ -40,7 +40,7 @@ def main(fileDir):
         if file_extension(fileObj) == '.mfm':
             print(fileObj)
             tree = ET.parse(fileObj)
-            tree.write("%s2" % fileObj)
+            #tree.write("%s2" % fileObj)
             root = tree.getroot()
             for child in root:
                 if len(child)>0 and "ship_atlas_detail" in child[0].text:
