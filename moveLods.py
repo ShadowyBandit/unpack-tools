@@ -41,7 +41,7 @@ def main(fileDir):
   for fileObj in fileList:
     if file_extension(fileObj) == '.model':
       tree = ET.parse(fileObj)
-      tree.write("%s2" % fileObj)
+      #tree.write("%s2" % fileObj)
       print(fileObj)
       root = tree.getroot()
       for child in root:
