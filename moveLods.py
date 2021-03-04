@@ -51,8 +51,8 @@ def main(fileDir):
       tree.write(fileObj)
     if "lod" in fileObj:
       shutil.move(fileObj, os.path.join(fileDir, "lods"))
-      if file_extension(fileObj) == '.model':
-        shutil.move("%s2" % fileObj, os.path.join(fileDir, "lods"))
+      #if file_extension(fileObj) == '.model':
+        #shutil.move("%s2" % fileObj, os.path.join(fileDir, "lods"))
       
 if os.path.exists("./aircraft/"):
     main("./aircraft/")
